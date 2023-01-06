@@ -1,9 +1,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- vim.cmd('nnoremap <space>e :NvimTreeToggle<CR>')
-vim.keymap.set('n', '<leader>e', ":NvimTreeToggle<CR>", { silent = true })
-
 -- nvm-tree setup
 -- https://www.youtube.com/watch?v=qu2xN8EkbOQ
 -- https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
