@@ -16,6 +16,14 @@ require'lspconfig'.ruby_ls.setup{
   capabilities = capabilities,
 }
 
+require'lspconfig'.dockerls.setup{
+  capabilities = capabilities,
+}
+
+-- require'lspconfig'.golangci_lint_ls.setup{
+--   capabilities = capabilities,
+-- }
+
 require'lspconfig'.pylsp.setup {
  capabilities = capabilities,
  settings = {
