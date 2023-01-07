@@ -1,5 +1,9 @@
 # nvim
 
+### terminal
+- ctrl-\ - opens terminal at bottom
+
+
 ### commands for editing
 - Shift-V - V-Line mode (visual line)
 - Space-cl - comment out the line

@@ -11,6 +11,7 @@ require("telescope-config")
 require("colorizer-config")
 require("blankline-config")
 require("comment-config")
+require("toggleterm-config")
 require("lsp")
 vim.cmd('colorscheme nord')
 
