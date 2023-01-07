@@ -1,14 +1,15 @@
 # nvim
+
+### need to install ripgrep for telescope
+> brew install rg
+
 ### neovim installation
 1. brew install neovim 
 2. mkdir ~/.config 
 3. cd ~/.config 
 4. git clone git@github.com:whyinzoo/dotfiles.git 
 5. ln -s ~/.config/dotfiles/nvim nvim
-
-
-### need to install ripgrep for telescope
-> brew install rg
+6. open nvim, then :PackerSync
 
 ### terminal
 - ctrl-\ - opens terminal at bottom
@@ -22,6 +23,13 @@
 or 
 mouse click highlight rows to copy.  press y and it will copy to clipboard
 - cutting/pasting using visual mode - https://vim.fandom.com/wiki/Cut/copy_and_paste_using_visual_selection
+
+- block inden:
+Put the cursor anywhere in the first line.
+Press V then jj to visually select the three lines.
+Press > to indent (shift text one 'shiftwidth' to the right), or press < to shift left.
+Press . to repeat the indent, or u to undo if you have shifted too far.t
+
 
 ## nvim-tree
 ### commands: https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
