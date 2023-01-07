@@ -16,7 +16,8 @@ vim.g.maplocalleader = ' '
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  use 'shaunsingh/nord.nvim'
+  --use 'shaunsingh/nord.nvim'
+  use 'folke/tokyonight.nvim'
 
   use { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',

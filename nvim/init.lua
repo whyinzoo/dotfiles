@@ -13,5 +13,5 @@ require("blankline-config")
 require("comment-config")
 require("toggleterm-config")
 require("lsp")
-vim.cmd('colorscheme nord')
+vim.cmd('colorscheme tokyonight-night')
 

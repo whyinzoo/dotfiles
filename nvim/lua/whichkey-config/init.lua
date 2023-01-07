@@ -6,7 +6,7 @@ local mappings = {
   q = {":q<CR>", "Quit"},
   sf = {":Telescope find_files<CR>", "Telescope find files"},
   sg = {":Telescope live_grep<CR>", "Telescope live grep"},
-  sr = {":Telescope resume", "Telescope resume search"},
+  sr = {":Telescope resume<CR>", "Telescope resume search"},
 }
 local opts = {
   prefix = '<leader>'
