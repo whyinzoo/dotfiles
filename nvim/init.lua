@@ -10,6 +10,7 @@ require("whichkey-config")
 require("telescope-config")
 require("colorizer-config")
 require("blankline-config")
+require("comment-config")
 require("lsp")
 vim.cmd('colorscheme nord')
 

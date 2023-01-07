@@ -5,6 +5,7 @@
 - Space-cl - comment out the line
 - Space-c - comment out blocks of line in V-Line mode
 
+- cutting/pasting using visual mode - https://vim.fandom.com/wiki/Cut/copy_and_paste_using_visual_selection
 
 ## nvim-tree
 ### commands: https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
