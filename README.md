@@ -17,6 +17,10 @@
 - y - to copy only the file name to the clipboard, there are also two variants which are Y to copy the relative path and g + y to copy the absolute path
 
 ## telescope - fuzzy finder and browser
+### need to install ripgrep
+> brew install rg
+
+### commands
 - Space-sf - find files
 - Space-sg - live grep
 - Space-sr - search resume
@@ -25,6 +29,17 @@
 - Tab - next buffer
 - Shift-Tab - previous buffer
 
+
+## lsp
+### https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+Need to install the following lsp
+- css: npm i -g vscode-langservers-extracted  
+- js: npm install -g typescript typescript-language-server
+- ruby: gem install ruby-lsp
+- python: pip install "python-lsp-server[all]" 
+- vim: npm install -g vim-language-server
+- golang: go install github.com/nametake/golangci-lint-langserver@latest
+go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 -------------------
 # p10k
 ## powershell10k
