@@ -60,5 +60,17 @@ return require('packer').startup(function(use)
 
   use 'onsails/lspkind.nvim'
   use 'norcalli/nvim-colorizer.lua'
+
+  -- will need to run :PackerCompile if changes mad eto gitsigns
+  -- usage here https://github.com/lewis6991/gitsigns.nvim
+  use {
+    'lewis6991/gitsigns.nvim',
+    -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+    config = function()
+      require('gitsigns').setup{
+        current_line_blame = true
+      }
+    end
+  }
 end)
 
