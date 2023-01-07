@@ -1,2 +1,0 @@
-telescope
-> brew install rg
