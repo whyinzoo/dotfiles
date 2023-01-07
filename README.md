@@ -1,4 +1,11 @@
 # nvim
+
+### commands for editing
+- Shift-V - V-Line mode (visual line)
+- Space-cl - comment out the line
+- Space-c - comment out blocks of line in V-Line mode
+
+
 ## nvim-tree
 ### commands: https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 - :NvimTreeToggle - opens up nvmtree explorer
@@ -20,7 +27,7 @@
 ### need to install ripgrep
 > brew install rg
 
-### commands
+### commands for searching
 - Space-sf - find files
 - Space-sg - live grep
 - Space-sr - search resume
