@@ -1,4 +1,14 @@
 # nvim
+### neovim installation
+1. brew install neovim 
+2. mkdir ~/.config 
+3. cd ~/.config 
+4. git clone git@github.com:whyinzoo/dotfiles.git 
+5. ln -s ~/.config/dotfiles/nvim nvim
+
+
+### need to install ripgrep for telescope
+> brew install rg
 
 ### terminal
 - ctrl-\ - opens terminal at bottom
@@ -31,9 +41,6 @@ mouse click highlight rows to copy.  press y and it will copy to clipboard
 - y - to copy only the file name to the clipboard, there are also two variants which are Y to copy the relative path and g + y to copy the absolute path
 
 ## telescope - fuzzy finder and browser
-### need to install ripgrep
-> brew install rg
-
 ### commands for searching
 - Space-sf - find files
 - Space-sg - live grep
