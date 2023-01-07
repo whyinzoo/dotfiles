@@ -72,5 +72,7 @@ return require('packer').startup(function(use)
       }
     end
   }
+
+  use 'lukas-reineke/indent-blankline.nvim'
 end)
 
