@@ -49,3 +49,5 @@ require('telescope').setup {
   }
 }
 
+--  Enable telescope fzf native
+require('telescope').load_extension('fzf')
