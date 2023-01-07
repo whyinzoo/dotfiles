@@ -68,8 +68,7 @@ Need to install the following lsp
 - python: pip install "python-lsp-server[all]" 
 - vim: npm install -g vim-language-server
 - docker: npm install -g dockerfile-language-server-nodejs
-- golang: go install github.com/nametake/golangci-lint-langserver@latest
-go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+- golang: go install golang.org/x/tools/gopls@latest
 -------------------
 # p10k - powershell10k
 ### move p10k.zsh to .p10k.zsh in home directory
