@@ -8,6 +8,9 @@
 - Shift-V - V-Line mode (visual line)
 - Space-cl - comment out the line
 - Space-c - comment out blocks of line in V-Line mode
+
+or 
+mouse click highlight rows to copy.  press y and it will copy to clipboard
 - cutting/pasting using visual mode - https://vim.fandom.com/wiki/Cut/copy_and_paste_using_visual_selection
 
 ## nvim-tree
