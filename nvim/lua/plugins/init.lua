@@ -59,5 +59,6 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip'
 
   use 'onsails/lspkind.nvim'
+  use 'norcalli/nvim-colorizer.lua'
 end)
 
