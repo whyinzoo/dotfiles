@@ -96,5 +96,6 @@ return require('packer').startup(function(use)
   use 'lukas-reineke/indent-blankline.nvim'
   use 'terrortylor/nvim-comment'
   use 'akinsho/toggleterm.nvim'
+  use { 'gelguy/wilder.nvim' } -- neovim command mode autocomplete
 end)
 

@@ -12,6 +12,7 @@ require("colorizer-config")
 require("blankline-config")
 require("comment-config")
 require("toggleterm-config")
+require("wilder-config")
 require("lsp")
 vim.cmd('colorscheme tokyonight-night')
 
