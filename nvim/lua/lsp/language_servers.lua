@@ -3,7 +3,9 @@ local langservers = {
   'html',
   'cssls',
   'tsserver',
-  'pylsp'
+  'pylsp',
+  'dockerls',
+  'ruby_ls',
 }
 
 for _, server in ipairs(langservers) do 
