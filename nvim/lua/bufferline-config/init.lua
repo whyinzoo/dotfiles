@@ -1,8 +1,11 @@
 require("bufferline").setup({
   options = {
     mode = 'buffers',
+    indicator = {
+      style = 'underline'
+    },
     offsets = {
-      {filetype = 'NvimTree'}
+      {filetype = 'NvimTree', text = "File Explorer"}
     },
   },
   highlights = {
