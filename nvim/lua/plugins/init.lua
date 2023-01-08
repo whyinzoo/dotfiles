@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
 
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
@@ -97,5 +97,6 @@ return require('packer').startup(function(use)
   use 'terrortylor/nvim-comment'
   use 'akinsho/toggleterm.nvim'
   use { 'gelguy/wilder.nvim' } -- neovim command mode autocomplete
+  use 'nvim-tree/nvim-web-devicons'
 end)
 
