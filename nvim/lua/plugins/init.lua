@@ -49,8 +49,8 @@ return require('packer').startup(function(use)
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     -- or                            , branch = '0.1.x',
-    requires = { 
-      {'nvim-lua/plenary.nvim', "nvim-telescope/telescope-live-grep-args.nvim"} 
+    requires = {
+      {'nvim-lua/plenary.nvim', "nvim-telescope/telescope-live-grep-args.nvim"}
     },
     config = function()
       require("telescope").load_extension("live_grep_args")
@@ -86,7 +86,7 @@ return require('packer').startup(function(use)
           topdelete    = { hl = 'GitSignsDelete', text = '‾', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn' },
           changedelete = { hl = 'GitSignsChange', text = '~', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn' },
           untracked    = { hl = 'GitSignsAdd'   , text = '┆', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'    },
-        },        
+        },
         -- signs = {
         --   add = { text = '+' },
         --   change = { text = '~' },
@@ -103,5 +103,17 @@ return require('packer').startup(function(use)
   use 'akinsho/toggleterm.nvim'
   use { 'gelguy/wilder.nvim' } -- neovim command mode autocomplete
   use 'nvim-tree/nvim-web-devicons'
+
+  use {
+  'lukoshkin/trailing-whitespace',
+  config = function ()
+    require'trailing-whitespace'.setup {
+      patterns = { '\\s\\+$' },
+      palette = { markdown = 'VioletRed' },
+      default_color = 'VioletRed',
+    }
+  end
+}
+
 end)
 

@@ -4,10 +4,10 @@
 > brew install rg
 
 ### neovim installation
-1. brew install neovim 
-2. mkdir ~/.config 
-3. cd ~/.config 
-4. git clone git@github.com:whyinzoo/dotfiles.git 
+1. brew install neovim
+2. mkdir ~/.config
+3. cd ~/.config
+4. git clone git@github.com:whyinzoo/dotfiles.git
 5. ln -s ~/.config/dotfiles/nvim nvim
 6. open nvim, then :PackerSync
 
@@ -20,7 +20,7 @@
 - Space-cl - comment out the line
 - Space-c - comment out blocks of line in V-Line mode
 
-or 
+or
 mouse click highlight rows to copy.  press y and it will copy to clipboard
 - cutting/pasting using visual mode - https://vim.fandom.com/wiki/Cut/copy_and_paste_using_visual_selection
 
@@ -62,10 +62,10 @@ Press . to repeat the indent, or u to undo if you have shifted too far.t
 ## lsp
 ### https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 Need to install the following lsp
-- css: npm i -g vscode-langservers-extracted  
+- css: npm i -g vscode-langservers-extracted
 - js: npm install -g typescript typescript-language-server
 - ruby: gem install ruby-lsp
-- python: pip install "python-lsp-server[all]" 
+- python: pip install "python-lsp-server[all]"
 - vim: npm install -g vim-language-server
 - docker: npm install -g dockerfile-language-server-nodejs
 - golang: go install golang.org/x/tools/gopls@latest

@@ -1,6 +1,6 @@
 -- show trailing whitespaces
-vim.cmd [[set list]]
-vim.cmd [[set listchars=trail:␣]]
+-- vim.cmd [[set list]]
+-- vim.cmd [[set listchars=trail:␣]]
 
 vim.cmd('filetype plugin indent on')
 vim.o.shortmess = vim.o.shortmess .. 'c'
