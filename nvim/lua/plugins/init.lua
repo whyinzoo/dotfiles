@@ -36,7 +36,7 @@ return require('packer').startup(function(use)
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
-    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
@@ -49,13 +49,18 @@ return require('packer').startup(function(use)
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     -- or                            , branch = '0.1.x',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { 
+      {'nvim-lua/plenary.nvim', "nvim-telescope/telescope-live-grep-args.nvim"} 
+    },
+    config = function()
+      require("telescope").load_extension("live_grep_args")
+    end
   }
 
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
-  --use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && make --build build --config Release && cmake --install build --prefix build' }
-
+  -- use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
+  -- use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && make --build build --config Release && cmake --install build --prefix build' }
+  use 'natecraddock/telescope-zf-native.nvim'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'

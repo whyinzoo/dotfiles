@@ -12,3 +12,4 @@ map('n', '<C-j>', '<C-w>j', {noremap = true, silent = false})
 map('n', '<C-k>', '<C-w>k', {noremap = true, silent = false})
 
 map('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+map('n', '<leader>lg', ':lua require("telescope").extensions.live_grep_args.live_grep_args()<CR>', {noremap = true, silent = true})

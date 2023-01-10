@@ -12,7 +12,8 @@ require("nvim-tree").setup({
   view = {
     -- number = true, -- adds number line to nvim-tree
     -- relativenumber = true,
-    adaptive_size = true,
+    -- adaptive_size = true,
+    width = 30,
     mappings = {
       list = {
         -- { key = "u", action = "dir_up" },

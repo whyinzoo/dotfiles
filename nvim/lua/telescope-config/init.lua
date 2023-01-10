@@ -16,7 +16,7 @@ require('telescope').setup {
     entry_prefix = "  ",
     initial_mode = "insert",
     selection_strategy = "reset",
-    sorting_strategy = "descending",
+    sorting_strategy = "ascending",
     layout_strategy = "horizontal",
     file_sorter = require'telescope.sorters'.get_fuzzy_file,
     file_ignore_patterns = {},
@@ -45,9 +45,37 @@ require('telescope').setup {
         ["<C-k>"] = actions.move_selection_previous,
         ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist
       }
-    }
+    },
+    extensions = {
+        ["zf-native"] = {
+            -- options for sorting file-like items
+            file = {
+                -- override default telescope file sorter
+                enable = true,
+
+                -- highlight matching text in results
+                highlight_results = true,
+
+                -- enable zf filename match priority
+                match_filename = true,
+            },
+
+            -- options for sorting all other items
+            generic = {
+                -- override default telescope generic item sorter
+                enable = true,
+
+                -- highlight matching text in results
+                highlight_results = true,
+
+                -- disable zf filename match priority
+                match_filename = false,
+            },
+        }
+    },
   }
 }
 
 --  Enable telescope fzf native
-require('telescope').load_extension('fzf')
+require("telescope").load_extension("zf-native")
+-- require('telescope').load_extension('fzf')
