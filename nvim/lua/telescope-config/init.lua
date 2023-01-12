@@ -77,5 +77,5 @@ require('telescope').setup {
 }
 
 --  Enable telescope fzf native
-require("telescope").load_extension("zf-native")
--- require('telescope').load_extension('fzf')
+-- require("telescope").load_extension("zf-native")
+require('telescope').load_extension('fzf')

@@ -30,6 +30,9 @@ Press V then jj to visually select the three lines.
 Press > to indent (shift text one 'shiftwidth' to the right), or press < to shift left.
 Press . to repeat the indent, or u to undo if you have shifted too far.t
 
+### packer installation path
+> `~/.local/share/nvim/site/pack/packer/start`
+
 
 ## nvim-tree
 ### commands: https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
