@@ -57,9 +57,10 @@ return require('packer').startup(function(use)
     end
   }
 
+  use 'cljoly/telescope-repo.nvim'
+
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  use 'natecraddock/telescope-zf-native.nvim'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -69,6 +70,7 @@ return require('packer').startup(function(use)
 
   use 'onsails/lspkind.nvim'
   use 'norcalli/nvim-colorizer.lua'
+  use 'ygm2/rooter.nvim'
 
   -- will need to run :PackerCompile if changes mad eto gitsigns
   -- usage here https://github.com/lewis6991/gitsigns.nvim

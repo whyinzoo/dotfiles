@@ -56,6 +56,8 @@ Press . to repeat the indent, or u to undo if you have shifted too far.t
 - Space-sf - find files
 - Space-sg - live grep
 - Space-sr - search resume
+- Space-rl - list git repos in home directory  (Ctrl-t to select the repo and CWD to it with nvim)
+
 
 ## bufferline
 - Tab - next buffer
