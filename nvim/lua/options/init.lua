@@ -38,4 +38,4 @@ vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
-vim.opt.guicursor = ""
+vim.opt.guicursor = 'i:blinkon100'
