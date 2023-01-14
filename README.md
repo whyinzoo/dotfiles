@@ -78,6 +78,7 @@ Need to install the following lsp
 - vim: npm install -g vim-language-server
 - docker: npm install -g dockerfile-language-server-nodejs
 - golang: go install golang.org/x/tools/gopls@latest
+&emsp; Add this for additiona golang formatting support - https://github.com/fatih/vim-go
 -------------------
 # p10k - powershell10k
 ### move p10k.zsh to .p10k.zsh in home directory
