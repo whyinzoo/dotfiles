@@ -24,6 +24,10 @@ or
 mouse click highlight rows to copy.  press y and it will copy to clipboard
 - cutting/pasting using visual mode - https://vim.fandom.com/wiki/Cut/copy_and_paste_using_visual_selection
 
+or using neoclip for copy/paste
+- Space-nc - opens up neoclip
+- <Ctrl-p> - paste selected entry
+
 - block inden:
 Put the cursor anywhere in the first line.
 Press V then jj to visually select the three lines.

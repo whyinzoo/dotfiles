@@ -59,8 +59,21 @@ return require('packer').startup(function(use)
 
   use 'cljoly/telescope-repo.nvim'
 
+  use {
+    "AckslD/nvim-neoclip.lua",
+    requires = {
+      -- you'll need at least one of these
+      {'nvim-telescope/telescope.nvim'},
+      -- {'ibhagwan/fzf-lua'},
+    },
+    config = function()
+      require('neoclip').setup()
+    end,
+  }
+
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
