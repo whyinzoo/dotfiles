@@ -7,7 +7,7 @@ local langservers = {
   'ruby_ls',
 }
 
-for _, server in ipairs(langservers) do 
+for _, server in ipairs(langservers) do
   require'lspconfig'[server].setup {
     capabilities = capabilities,
   }
@@ -26,11 +26,13 @@ require'lspconfig'.gopls.setup {
     gopls = {
       analyses = {
         unusedparams = true,
+        unusedvariable = true,
       },
       staticcheck = true,
     },
   },
 }
+
 ---------------------
 
 require'lspconfig'.pylsp.setup {
