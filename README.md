@@ -11,6 +11,10 @@
 5. ln -s ~/.config/dotfiles/nvim nvim
 6. open nvim, then :PackerSync
 
+NOTE: To create snapshot of plugins:  
+:PackerSnapshot /path/to/packer.lock  
+:PackerRollback /path/to/packer.lock  
+
 ### terminal
 - ctrl-\ - opens terminal at bottom
 
