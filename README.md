@@ -30,9 +30,9 @@ mouse click highlight rows to copy.  press y and it will copy to clipboard
 
 or using neoclip for copy/paste
 - Space-nc - opens up neoclip
-- <Ctrl-p> - paste selected entry
+- Ctrl-p - paste selected entry
 
-- block inden:
+- block indent:
 Put the cursor anywhere in the first line.
 Press V then jj to visually select the three lines.
 Press > to indent (shift text one 'shiftwidth' to the right), or press < to shift left.
